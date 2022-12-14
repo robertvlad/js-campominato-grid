@@ -11,6 +11,7 @@ function create_grid() {
         box.innerText = i+1
         box.addEventListener("click" , function(){
             this.classList.toggle("clicked")
+            console.log(this.innerText)
         })
         document.querySelector(".grid").appendChild(box)
     }    
